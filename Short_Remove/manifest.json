@@ -1,0 +1,11 @@
+  {
+    "name": "Youtube subscriptions Short remover",
+    "version": "1.0",
+    "description": "Youtube subscriptions Short remover",
+    "manifest_version": 3,
+    "content_scripts":[{
+	"matches":["*://www.youtube.com/feed/subscriptions*"],
+	"js": ["black.js"],
+	"run_at": "document_end"
+	   }]
+  }
